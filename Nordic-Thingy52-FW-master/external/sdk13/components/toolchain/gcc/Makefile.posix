@@ -1,0 +1,3 @@
+GNU_INSTALL_ROOT := ~/PDIoT/cw3/gcc-arm-none-eabi-9-2020-q2-update
+GNU_VERSION := 9.0
+GNU_PREFIX := arm-none-eabi
