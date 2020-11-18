@@ -21,6 +21,7 @@ import com.specknet.pdiotapp.bluetooth.BluetoothService
 import com.specknet.pdiotapp.bluetooth.ConnectingActivity
 import com.specknet.pdiotapp.live.LiveDataActivity
 import com.specknet.pdiotapp.onboarding.OnBoardingActivity
+import com.specknet.pdiotapp.recognition.RecognitionActivity
 import com.specknet.pdiotapp.utils.Constants
 import com.specknet.pdiotapp.utils.Utils
 import kotlinx.android.synthetic.main.activity_main.*
@@ -31,6 +32,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var liveProcessingButton: Button
     lateinit var pairingButton: Button
     lateinit var recordButton: Button
+    lateinit var recognitionButton: Button
     lateinit var respeckStatus: TextView
 
     // permissions
@@ -69,6 +71,7 @@ class MainActivity : AppCompatActivity() {
         pairingButton = findViewById(R.id.ble_button)
         recordButton = findViewById(R.id.record_button)
         respeckStatus = findViewById(R.id.respeck_status_welcome)
+        recognitionButton = findViewById(R.id.recognition_button)
 
         permissionAlertDialog = AlertDialog.Builder(this)
 
@@ -110,6 +113,11 @@ class MainActivity : AppCompatActivity() {
 
         recordButton.setOnClickListener {
             val intent = Intent(this, RecordingActivity::class.java)
+            startActivity(intent)
+        }
+
+        recognitionButton.setOnClickListener {
+            val intent = Intent(this, RecognitionActivity::class.java)
             startActivity(intent)
         }
     }

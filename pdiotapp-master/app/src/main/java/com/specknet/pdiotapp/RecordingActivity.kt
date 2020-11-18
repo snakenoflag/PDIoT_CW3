@@ -14,7 +14,6 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.specknet.pdiotapp.utils.Constants
 import com.specknet.pdiotapp.utils.CountUpTimer
-import com.specknet.pdiotapp.utils.Utils
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException

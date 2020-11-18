@@ -70,6 +70,9 @@
             android:name=".RecordingActivity"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".recognition.RecognitionActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
